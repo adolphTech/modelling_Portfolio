@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shirley Kataka | wilde flower</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+      <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- portfolio -->
+    <link href="/css/portfolio.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+   {{>header}}
+
+    <!-- //header -->
+
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb" class="">
+        <ol class="breadcrumb d-flex justify-content-center bg-theme">
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active font-weight-bold" aria-current="page">gallery</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
+
+
+    <!-- Gallery pics -->
+   {{>pics}}
+    <!-- //Gallery pics -->
+        
+    <!-- footer -->
+    {{>footer}}
+    <!-- //footer -->
+   
+    <!-- Register modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header  bg-theme2">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body  bg-theme1">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label text-white">Username</label>
+                            <input type="text" class="form-control border" placeholder="john mercy " name="Name" id="recipient-rname"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-email" class="col-form-label text-white">Email</label>
+                            <input type="email" class="form-control border" placeholder="username@email.com" name="Email"
+                                id="recipient-email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password1" class="col-form-label text-white">Password</label>
+                            <input type="password" class="form-control border" placeholder="****" name="Password" id="password1"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="col-form-label text-white">Confirm Password</label>
+                            <input type="password" class="form-control border" placeholder="****" name="Confirm Password"
+                                id="password2" required="">
+                        </div>
+                        <div class="sub-w3l">
+                            <div class="sub-w3layouts">
+                                <input type="checkbox" id="brand2" value="">
+                                <label for="brand2" class="mb-3 text-white">
+                                    <span></span>I Accept to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control bg-theme1 text-white" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // Register modal -->
+
+   {{>galleryScripts}}
+</body>
+</html>
