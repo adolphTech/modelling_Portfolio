@@ -8,7 +8,7 @@
     "dev": " nodemon src/index.js -e hbs,js,css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adolph",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
